@@ -7,7 +7,7 @@
     <persistence-unit name="examen" transaction-type="JTA">
 
         <jta-data-source>authorDataSource</jta-data-source>
-        <class>io.helidon.examples.model.Authors</class>
+        <class>io.helidon.examples.db.Books</class>
 
 
         <properties>
