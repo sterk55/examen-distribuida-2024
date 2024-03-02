@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - MainTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>MainTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/io.helidon.examples.quickstart.mp.html">io.helidon.examples.quickstart.mp</a> &gt; MainTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.018s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testHelloWorld()</td>
+<td class="success">0.018s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2024.03.01 16:58:17 INFO io.helidon.common.LogConfig Thread[Test worker,5,main]: Logging at initialization configured using classpath: /logging.properties
+2024.03.01 16:58:17 INFO io.helidon.tracing.tracerresolver.TracerResolverBuilder Thread[Test worker,5,main]: TracerResolver not configured, tracing is disabled
+2024.03.01 16:58:18 INFO io.helidon.microprofile.security.SecurityCdiExtension Thread[Test worker,5,main]: Authentication provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). Security will not have any valid authentication provider
+2024.03.01 16:58:18 INFO io.helidon.microprofile.security.SecurityCdiExtension Thread[Test worker,5,main]: Authorization provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). ABAC provider is configured for authorization.
+2024.03.01 16:58:18 INFO io.helidon.microprofile.server.ServerCdiExtension Thread[Test worker,5,main]: Registering JAX-RS Application: HelidonMP
+2024.03.01 16:58:18 INFO io.helidon.webserver.NettyWebServer Thread[nioEventLoopGroup-2-1,10,main]: Channel '@default' started: [id: 0x3f2d3956, L:/[0:0:0:0:0:0:0:0]:55754]
+2024.03.01 16:58:18 INFO io.helidon.microprofile.server.ServerCdiExtension Thread[Test worker,5,main]: Server started on http://localhost:55754 (and all other host addresses) in 2871 milliseconds (since JVM startup).
+2024.03.01 16:58:19 INFO io.helidon.common.HelidonFeatures Thread[features-thread,5,main]: Helidon MP 3.2.6 features: [CDI, Config, Fault Tolerance, Health, JAX-RS, Metrics, Open API, REST Client, Security, Server, Tracing]
+2024.03.01 16:58:19 INFO io.helidon.webserver.NettyWebServer Thread[nioEventLoopGroup-2-1,10,main]: Channel '@default' closed: [id: 0x3f2d3956, L:/[0:0:0:0:0:0:0:0]:55754]
+2024.03.01 16:58:19 INFO io.helidon.microprofile.server.ServerCdiExtension Thread[Test worker,5,main]: Server stopped in 9 milliseconds.
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>mar. 01, 2024 4:58:16 P. M. org.jboss.weld.bootstrap.WeldStartup &lt;clinit&gt;
+INFO: WELD-000900: 4.0.3 (Final)
+mar. 01, 2024 4:58:17 P. M. org.jboss.weld.environment.deployment.discovery.DiscoveryStrategyFactory create
+INFO: WELD-ENV-000020: Using jandex for bean discovery
+mar. 01, 2024 4:58:17 P. M. org.jboss.weld.bootstrap.WeldStartup startContainer
+INFO: WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+mar. 01, 2024 4:58:17 P. M. org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
+INFO: WELD-000411: Observer method [BackedAnnotatedMethod] public org.glassfish.jersey.ext.cdi1x.internal.ProcessAllAnnotatedTypes.processAnnotatedType(@Observes ProcessAnnotatedType&lt;?&gt;, BeanManager) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+mar. 01, 2024 4:58:17 P. M. org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
+INFO: WELD-000411: Observer method [BackedAnnotatedMethod] private io.helidon.microprofile.openapi.OpenApiCdiExtension.processAnnotatedType(@Observes ProcessAnnotatedType&lt;X&gt;) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.2</a> at 1 mar. 2024 16:58:19</p>
+</div>
+</div>
+</body>
+</html>

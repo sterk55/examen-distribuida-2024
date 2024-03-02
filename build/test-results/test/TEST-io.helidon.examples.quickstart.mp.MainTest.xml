@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.helidon.examples.quickstart.mp.MainTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-03-01T21:58:19" hostname="DESKTOP-O8D5O5B" time="0.018">
+  <properties/>
+  <testcase name="testHelloWorld()" classname="io.helidon.examples.quickstart.mp.MainTest" time="0.018"/>
+  <system-out><![CDATA[2024.03.01 16:58:17 INFO io.helidon.common.LogConfig Thread[Test worker,5,main]: Logging at initialization configured using classpath: /logging.properties
+2024.03.01 16:58:17 INFO io.helidon.tracing.tracerresolver.TracerResolverBuilder Thread[Test worker,5,main]: TracerResolver not configured, tracing is disabled
+2024.03.01 16:58:18 INFO io.helidon.microprofile.security.SecurityCdiExtension Thread[Test worker,5,main]: Authentication provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). Security will not have any valid authentication provider
+2024.03.01 16:58:18 INFO io.helidon.microprofile.security.SecurityCdiExtension Thread[Test worker,5,main]: Authorization provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). ABAC provider is configured for authorization.
+2024.03.01 16:58:18 INFO io.helidon.microprofile.server.ServerCdiExtension Thread[Test worker,5,main]: Registering JAX-RS Application: HelidonMP
+2024.03.01 16:58:18 INFO io.helidon.webserver.NettyWebServer Thread[nioEventLoopGroup-2-1,10,main]: Channel '@default' started: [id: 0x3f2d3956, L:/[0:0:0:0:0:0:0:0]:55754]
+2024.03.01 16:58:18 INFO io.helidon.microprofile.server.ServerCdiExtension Thread[Test worker,5,main]: Server started on http://localhost:55754 (and all other host addresses) in 2871 milliseconds (since JVM startup).
+2024.03.01 16:58:19 INFO io.helidon.common.HelidonFeatures Thread[features-thread,5,main]: Helidon MP 3.2.6 features: [CDI, Config, Fault Tolerance, Health, JAX-RS, Metrics, Open API, REST Client, Security, Server, Tracing]
+2024.03.01 16:58:19 INFO io.helidon.webserver.NettyWebServer Thread[nioEventLoopGroup-2-1,10,main]: Channel '@default' closed: [id: 0x3f2d3956, L:/[0:0:0:0:0:0:0:0]:55754]
+2024.03.01 16:58:19 INFO io.helidon.microprofile.server.ServerCdiExtension Thread[Test worker,5,main]: Server stopped in 9 milliseconds.
+]]></system-out>
+  <system-err><![CDATA[mar. 01, 2024 4:58:16 P. M. org.jboss.weld.bootstrap.WeldStartup <clinit>
+INFO: WELD-000900: 4.0.3 (Final)
+mar. 01, 2024 4:58:17 P. M. org.jboss.weld.environment.deployment.discovery.DiscoveryStrategyFactory create
+INFO: WELD-ENV-000020: Using jandex for bean discovery
+mar. 01, 2024 4:58:17 P. M. org.jboss.weld.bootstrap.WeldStartup startContainer
+INFO: WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+mar. 01, 2024 4:58:17 P. M. org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
+INFO: WELD-000411: Observer method [BackedAnnotatedMethod] public org.glassfish.jersey.ext.cdi1x.internal.ProcessAllAnnotatedTypes.processAnnotatedType(@Observes ProcessAnnotatedType<?>, BeanManager) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+mar. 01, 2024 4:58:17 P. M. org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
+INFO: WELD-000411: Observer method [BackedAnnotatedMethod] private io.helidon.microprofile.openapi.OpenApiCdiExtension.processAnnotatedType(@Observes ProcessAnnotatedType<X>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+]]></system-err>
+</testsuite>

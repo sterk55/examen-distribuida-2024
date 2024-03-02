@@ -1,0 +1,7 @@
+mp:
+  openapi:
+    servers:
+      - url: http://localhost:7001
+    ui:
+      enable: true
+      path: /swagger-ui
